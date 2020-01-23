@@ -32,5 +32,8 @@ while i < len(flname_list):
     img = read_grayscale(img)
     img = cv2.flip(img, 1) # 1이면 좌우반전, 0이면 상하반전
     save_img(img, flname_list[i], 'mirror')
-    print('complete to save image: ' + str(flname_list[i]))
+    print('complete saving image: ' + str(flname_list[i]))
     i += 1
+
+print("File convert finish!")
+os.system("pause")

@@ -1,7 +1,6 @@
 import os
 import cv2
 import numpy as np
-import shutil
 
 # 디렉토리가 존재하지 않으면 디렉토리 생성하는 함수
 def createFolder(directory): 
@@ -52,7 +51,8 @@ while i < len(flname_list):
     img = read_grayscale(img)
     img = lux_control(img, 100)
     save_img(img, flname_list[i], 'bright')
-    print('complete to save image: ' + str(flname_list[i]))
+    print('complete saving image: ' + str(flname_list[i]))
     i += 1
-
-shutil.move(this_dirname + '/bright', this_dirname + '/image hatch/bright')
+    
+print("File convert finish!")
+os.system("pause")

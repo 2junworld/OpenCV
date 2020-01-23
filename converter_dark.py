@@ -53,6 +53,8 @@ while i < len(flname_list):
     img = read_grayscale(img)
     img = lux_control(img, -80)
     save_img(img, flname_list[i], 'dark')
-    print('complete to save image: ' + str(flname_list[i]))
+    print('complete saving image: ' + str(flname_list[i]))
     i += 1
 
+print("File convert finish!")
+os.system("pause")
