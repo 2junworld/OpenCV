@@ -36,4 +36,5 @@ while i < len(flname_list):
     img = this_dirname + '/image seed/' + flname_list[i]
     img = read_grayscale(img)
     save_img(img, flname_list[i], 'gray')
+    print('complete to save image: ' + str(flname_list[i]))
     i += 1
